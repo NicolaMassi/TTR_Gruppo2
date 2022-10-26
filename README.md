@@ -1,7 +1,7 @@
 # TTR_Gruppo2
 
-David: trenino
-Elia: stazione
-Michele: mazzo
-Nicola: giocatore
-Andrea: tabellone
+David LoRe: trenino<br><br>
+Elia Vecchi: stazione<br><br>
+Michele Visintin: mazzo<br><br>
+Nicola Massi: giocatore<br><br>
+Andrea Cabrini: tabellone<br><br>
