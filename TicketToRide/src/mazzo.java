@@ -1,20 +1,17 @@
-
-public class Mazzo{
+public class mazzo{
    private int tipo;
-   private Carta carte[]=new Carta[];
+   private Carta carte[] = new Carta[1];
    
-   public Mazzo(){}
-   public Mazzo(int tipo)
-   {
+   public mazzo(){}
+   
+   public mazzo(int tipo){
        this.tipo=tipo;
    }
-    public void setTipo()
-    {
-     this.tipo=tipo; 
+    public void setTipo(int tipo){
+     this.tipo = tipo; 
     }
     
-    public int getTipo(int tipo)
-    {
+    public int getTipo(){
       return tipo;  
     }
     
