@@ -1,44 +1,36 @@
-
 public class CartaObiettivo {
     private String inizio;
     private String fine;
     private int punteggio;
     
     public CartaObiettivo(){}
-    public CartaObiettivo(int tipo,String fine,String inizio)
-    {
-        this.punteggio=punteggio;
-        this.fine=fine;
-        this.inizio=inizio;
-    }
     
-    //get e set
-    
-    //inizio 
-    public void setInizio()
-    {
+    public CartaObiettivo(int punteggio, String fine, String inizio){
+        this.punteggio = punteggio;
+        this.fine = fine;
+        this.inizio = inizio;
+    }    
+     
+    public void setInizio(String inizio){
        this.inizio=inizio;
     }
-    public String getInizio(String inizio)
-    {
+    
+    public String getInizio(){
         return inizio;
     }
-    //fine
-    public void setFine()
-    {
-       this.inizio=inizio;
+    
+    public void setFine(String fine){
+       this.fine = fine;
     }
-    public String getFine(String fine)
-    {
+    
+    public String getFine(){
         return fine;
     }
-    //punteggio
-    public void setPunteggio()
-    {
+    
+    public void setPunteggio(int punteggio){
         this.punteggio=punteggio;
     }
-    public int getPunteggio(int punteggio)
-    {
+    public int getPunteggio(){
         return punteggio;
     }
     
