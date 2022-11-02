@@ -1,6 +1,3 @@
-
-import java.util.*;
-
 public class TreninoColore {
     
     private String colore;
