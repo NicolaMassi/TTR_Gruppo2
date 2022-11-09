@@ -6,27 +6,13 @@ public class Tratta {
     private Stazione fine;
     private boolean occupata;
     
-   public Tratta(){
-   } 
+   public Tratta(){} 
    
-   public Tratta(int lunghezza){
-   
+   public Tratta(int lunghezza, String colore, Stazione inizio, Stazione fine, boolean occupata){
        this.lunghezza = lunghezza;
-   }
-   
-   public Tratta(String colore){
-   
        this.colore = colore;
-   }
-   
-   public Tratta(Stazione inizio, Stazione fine){
-   
        this.inizio = inizio;
        this.fine = fine;
-   }
-   
-   public Tratta(boolean occupata){
-   
        this.occupata = occupata;
    }
    
@@ -68,9 +54,8 @@ public class Tratta {
        
     public void setOccupata(boolean occupata){
       this.occupata = occupata;
-    }   
-       
-       
+    }
+    
     @Override
     public String toString(){
     

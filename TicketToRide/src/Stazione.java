@@ -1,26 +1,23 @@
 public class Stazione {
     
-    private String stazione;
+    private String nome;
     
     public Stazione(){}
     
-    public Stazione(String stazione)
-    {
-        this.stazione=stazione;
+    public Stazione(String nome){
+        this.nome=nome;
     }
     
-    public void setStazione (String stazione)
-    {
-        this.stazione=stazione;
+    public void setStazione (String nome){
+        this.nome=nome;
     }
     
-    public String getStazione()
-    {
-        return stazione;
+    public String getStazione(){
+        return nome;
     }
     
-    public String toString()
-    {
-        return "La stazione è:" + stazione;
+    @Override
+    public String toString(){
+        return "La stazione è:" + nome;
     }
 }
