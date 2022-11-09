@@ -1,12 +1,14 @@
 public class mazzo{
    private int tipo;
-   private Carta carte[] = new Carta[1];
+   private Carta carte[] = new Carta[];
    
    public mazzo(){}
    
-   public mazzo(int tipo){
+   public mazzo(int tipo, Carta carte[]){
        this.tipo=tipo;
+       this.carte = carte;
    }
+   
     public void setTipo(int tipo){
      this.tipo = tipo; 
     }
@@ -15,16 +17,10 @@ public class mazzo{
       return tipo;  
     }
     
-    /**
-     *
-     * @return
-     */
     public String toString()
     {
         if(tipo==0)
-            return"la carta è una carta treno";
+            return"La carta è una carta treno.";
         return"la carta è una carta tratta";
     }
-    
-
 }
