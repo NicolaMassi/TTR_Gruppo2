@@ -1,23 +1,18 @@
-
-import java.util.*;
-
 public class TreninoColore {
     
     private String colore;
     
-   public TreninoColore(){} //costruttore vuoto
-   public TreninoColore(String colore)
-        {
+   public TreninoColore(){}
+   
+   public TreninoColore(String colore){
             this.colore = colore;      
         }
    
-    public void SetTrenino(String colore) //metodo set
-        {
+    public void SetTrenino(String colore){
             this.colore = colore;
         }
     
-    public String getTrenino() //metodo get
-        {
+    public String getTrenino(){
             return colore;
         }
     
