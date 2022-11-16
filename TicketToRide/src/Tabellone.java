@@ -68,7 +68,26 @@ public class Tabellone extends Tratta{
        tratte[22] = new Tratta(3, "grigio", new Stazione("Phoenix"), new Stazione("Los Angeles"), false);
        tratte[23] = new Tratta(6, "nera", new Stazione("Los Angeles"), new Stazione("El Paso"), false);
        tratte[25] = new Tratta(3, "grigia", new Stazione("Phoenix"), new Stazione("Santa Fe"), false);
-
+       tratte[41] = new Tratta(6, "verde", new Stazione("El Paso"), new Stazione("Houston"), false);
+       tratte[42] = new Tratta(1, "grigio", new Stazione("Houston"), new Stazione("Dallas"), false);
+       tratte[43] = new Tratta(1, "grigio", new Stazione("Houston"), new Stazione("Dallas"), false);
+       tratte[44] = new Tratta(2, "grigio", new Stazione("Dallas"), new Stazione("Oklahoma City"), false);
+       tratte[45] = new Tratta(2, "grigio", new Stazione("Dallas"), new Stazione("Oklahoma City"), false);
+       tratte[46] = new Tratta(2, "grigio", new Stazione("Oklahoma City"), new Stazione("Kansas City"), false);
+       tratte[47] = new Tratta(2, "grigio", new Stazione("Oklahoma City"), new Stazione("Kansas City"), false);
+       tratte[48] = new Tratta(1, "grigio", new Stazione("Kansas City"), new Stazione("Omaha"), false);
+       tratte[49] = new Tratta(1, "grigio", new Stazione("Kansas City"), new Stazione("Omaha"), false);
+       tratte[50] = new Tratta(2, "grigio", new Stazione("Omaha"), new Stazione("Duluth"), false);
+       tratte[51] = new Tratta(2, "grigio", new Stazione("Omaha"), new Stazione("Duluth"), false);
+       tratte[52] = new Tratta(6, "grigio", new Stazione("Winnipeg"), new Stazione("Sault St. Marie"), false);
+       tratte[53] = new Tratta(3, "grigio", new Stazione("Duluth"), new Stazione("Sault St. Marie"), false);
+       tratte[54] = new Tratta(2, "blu", new Stazione("Kansas City"), new Stazione("Saint Louis"), false);
+       tratte[55] = new Tratta(2, "rosa", new Stazione("Kansas City"), new Stazione("Saint Louis"), false);
+       tratte[56] = new Tratta(2, "grigio", new Stazione("Oklahoma City"), new Stazione("Little Rock"), false);
+       tratte[57] = new Tratta(2, "grigio", new Stazione("Dallas"), new Stazione("Little Rock"), false);
+       tratte[58] = new Tratta(2, "grigio", new Stazione("Houston"), new Stazione("new Orleans"), false);
+       tratte[59] = new Tratta(3, "verde", new Stazione("Little Rock"), new Stazione("new Orleans"), false);
+       tratte[60] = new Tratta(2, "grigio", new Stazione("Little Rock"), new Stazione("Saint Louis"), false);
     }
     
     public void setTratte(Tratta tratte[]) {
