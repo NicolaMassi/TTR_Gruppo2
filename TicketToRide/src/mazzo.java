@@ -1,6 +1,8 @@
+import java.util.*;
+
 public class mazzo{
    private int tipo;
-   private Carta carte[] = new Carta[];
+   Carta carte[] = new Carta[10];
    
    public mazzo(){}
    
@@ -15,8 +17,8 @@ public class mazzo{
     
     public int getTipo(){
       return tipo;  
-    }
-    
+    }    
+   @Override
     public String toString()
     {
         if(tipo==0)
