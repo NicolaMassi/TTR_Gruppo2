@@ -67,7 +67,27 @@ public class Tabellone extends Tratta{
        tratte[21] = new Tratta(5, "bianca", new Stazione("Denver"), new Stazione("Phoenix"), false);
        tratte[22] = new Tratta(3, "grigio", new Stazione("Phoenix"), new Stazione("Los Angeles"), false);
        tratte[23] = new Tratta(6, "nera", new Stazione("Los Angeles"), new Stazione("El Paso"), false);
-       tratte[25] = new Tratta(3, "grigia", new Stazione("Phoenix"), new Stazione("Santa Fe"), false);
+       tratte[25] = new Tratta(3, "grigio", new Stazione("Phoenix"), new Stazione("Santa Fe"), false);
+       tratte[81] = new Tratta(4, "arancio",  new Stazione("Atlanta"), new Stazione("New Orleans"), false); 
+       tratte[82] = new Tratta(2, "grigio",  new Stazione("Atlanta"), new Stazione("Raleigh"), false);
+       tratte[83] = new Tratta(2, "grigio",  new Stazione("Atlanta"), new Stazione("Raleigh"), false);
+       tratte[84] = new Tratta(2, "grigio",  new Stazione("Raleigh"), new Stazione("Washington"), false);
+       tratte[85] = new Tratta(2, "grigio",  new Stazione("Raleigh"), new Stazione("Washington"), false);
+       tratte[86] = new Tratta(2, "arancio",  new Stazione("Washington"), new Stazione("New York"), false);
+       tratte[87] = new Tratta(2, "nero",  new Stazione("Washington"), new Stazione("New York"), false);
+       tratte[88] = new Tratta(2, "bianco",  new Stazione("Pittsburgh"), new Stazione("New York"), false);
+       tratte[89] = new Tratta(2, "verde",  new Stazione("Pittsburgh"), new Stazione("New York"), false);
+       tratte[90] = new Tratta(2, "grigio",  new Stazione("Boston"), new Stazione("Montreal"), false);
+       tratte[91] = new Tratta(2, "grigio",  new Stazione("Boston"), new Stazione("Montreal"), false);
+       tratte[92] = new Tratta(3, "blu",  new Stazione("Montreal"), new Stazione("New York"), false);
+       tratte[93] = new Tratta(2, "giallo",  new Stazione("Boston"), new Stazione("New York"), false);
+       tratte[94] = new Tratta(2, "rosso",  new Stazione("Boston"), new Stazione("New York"), false);
+       tratte[95] = new Tratta(2, "grigio",  new Stazione("Pittsburgh"), new Stazione("Washington"), false);
+       tratte[96] = new Tratta(2, "grigio",  new Stazione("Raleigh"), new Stazione("Charleston"), false);
+       tratte[97] = new Tratta(2, "grigio",  new Stazione("Atlanta"), new Stazione("Charleston"), false);
+       tratte[98] = new Tratta(4, "rosa",  new Stazione("Charleston"), new Stazione("Miami"), false);
+       tratte[99] = new Tratta(5, "blu",  new Stazione("Atlanta"), new Stazione("Miami"), false);
+       tratte[100] = new Tratta(6, "rosso",  new Stazione( "Miami"), new Stazione("New Orleans"), false);
 
     }
     
