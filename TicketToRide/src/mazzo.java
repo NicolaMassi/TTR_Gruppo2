@@ -1,8 +1,8 @@
-import java.util.*;
+import java.util.Random;
 
 public class mazzo{
    private int tipo;
-   Carta carte[] = new Carta[10];
+   private Carta carte[] = new Carta[36];
    
    public mazzo(){}
    
@@ -24,5 +24,16 @@ public class mazzo{
         if(tipo==0)
             return"La carta è una carta treno.";
         return"la carta è una carta tratta";
+    }
+    
+    public void mescolaMazzo(){
+        Random rand = new Random();
+        
+        for (int i = 0; i < carte.length; i++) {
+            int randIndex = rand.nextInt(carte.length);
+            Carta temp = carte[randIndex];
+            carte[randIndex] = carte[i];
+            carte[i] = temp;
+        }
     }
 }
