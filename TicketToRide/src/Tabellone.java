@@ -67,7 +67,7 @@ public class Tabellone extends Tratta{
        tratte[21] = new Tratta(5, "bianca", new Stazione("Denver"), new Stazione("Phoenix"), false);
        tratte[22] = new Tratta(3, "grigio", new Stazione("Phoenix"), new Stazione("Los Angeles"), false);
        tratte[23] = new Tratta(6, "nera", new Stazione("Los Angeles"), new Stazione("El Paso"), false);
-       
+       tratte[24] = new Tratta(2, "grigio", new Stazione("Santa Fe"), new Stazione("Denver") , false);
        tratte[25] = new Tratta(3, "grigio", new Stazione("Phoenix"), new Stazione("Santa Fe"), false);
        tratte[26] = new Tratta(2, "grigia", new Stazione("Santa Fe"), new Stazione("Denver"), false);
        tratte[27] = new Tratta(2, "grigia", new Stazione("Santa Fe"), new Stazione("El Paso"), false);
