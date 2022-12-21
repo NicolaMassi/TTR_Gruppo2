@@ -6,14 +6,14 @@ import java.awt.Graphics2D;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
 
 
-public class ContenutoGrafico extends JPanel{
+public class ContenutoGrafico extends JPanel implements ActionListener{
 
 
     private Timer timer;
@@ -26,7 +26,7 @@ public class ContenutoGrafico extends JPanel{
 
     private void initBoard() {
 
-        addKeyListener(new TAdapter());
+        addMouseListener(new TAdapter());
         setBackground(Color.black);
 	setFocusable(true);
 
@@ -56,28 +56,16 @@ public class ContenutoGrafico extends JPanel{
     @Override
     public void actionPerformed(ActionEvent e) {
         
-        step();
+        
     }
-    
-    private void step() {
-        
-        spaceShip.move();
-        
-        repaint(spaceShip.getX()-1, spaceShip.getY()-1, 
-                spaceShip.getWidth()+2, spaceShip.getHeight()+2);     
-    }    
-
-    private class TAdapter extends KeyAdapter {
+         
+    private class TAdapter extends MouseAdapter {
 
         @Override
-        public void keyReleased(KeyEvent e) {
+        public void mouseClicked(MouseEvent e) {
             spaceShip.keyReleased(e);
         }
 
-        @Override
-        public void keyPressed(KeyEvent e) {
-            spaceShip.keyPressed(e);
-        }
     }
 }
     

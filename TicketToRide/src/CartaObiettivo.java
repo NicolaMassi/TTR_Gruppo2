@@ -1,4 +1,4 @@
-public class CartaObiettivo {
+public class CartaObiettivo extends Carta{
     private String inizio;
     private String fine;
     private int punteggio;
