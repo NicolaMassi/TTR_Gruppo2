@@ -1,3 +1,3 @@
-public class Carta extends Sprite{
+public class Carta {
     
 }

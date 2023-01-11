@@ -1,10 +1,17 @@
 import javax.swing.JFrame;
 public class JPanel extends javax.swing.JFrame {
-
+    
+    private ContenutoGrafico cg;
+    
     public JPanel() {
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         initComponents();
+        
+        cg = new ContenutoGrafico();
+        getContentPane().add(cg);
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.

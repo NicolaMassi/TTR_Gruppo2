@@ -1,9 +1,9 @@
 public class Giocatore {
     
-    private CartaTreno[] treniniDisponibili = new CartaTreno[];
-    private Tratta[] trattePrese = new Tratta[];
-    private CartaObiettivo[] carteObiettivo = new CartaObiettivo[];
-    private CartaTreno[] carteTreno = new CartaTreno[];
+    private CartaTreno[] treniniDisponibili = new CartaTreno[1];
+    private Tratta[] trattePrese = new Tratta[1];
+    private CartaObiettivo[] carteObiettivo = new CartaObiettivo[1];
+    private CartaTreno[] carteTreno = new CartaTreno[1];
     private boolean trattaMaggiore;
     
     public Giocatore(){}

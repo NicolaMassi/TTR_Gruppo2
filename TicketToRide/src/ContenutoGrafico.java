@@ -35,6 +35,8 @@ public class ContenutoGrafico extends JPanel implements ActionListener{
         addMouseListener(new TAdapter());
         setBackground(Color.black);
 	setFocusable(true);
+        setSize(1100, 749);
+        setLocation(230, 0);
 
         timer = new Timer(DELAY, this);
         timer.start();
