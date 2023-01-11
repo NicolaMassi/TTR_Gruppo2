@@ -1,5 +1,5 @@
 
-public class CartaTreno {
+public class CartaTreno extends Carta{
 
     private String colore;
     private boolean jolly;
