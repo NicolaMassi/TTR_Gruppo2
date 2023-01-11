@@ -3,13 +3,19 @@
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Point;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.net.URL;
+import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 import javax.swing.Timer;
+
 
 
 
@@ -30,8 +36,6 @@ public class ContenutoGrafico extends JPanel implements ActionListener{
         setBackground(Color.black);
 	setFocusable(true);
 
-        spaceShip = new SpaceShip();
-
         timer = new Timer(DELAY, this);
         timer.start();
     }
@@ -49,8 +53,8 @@ public class ContenutoGrafico extends JPanel implements ActionListener{
         
         Graphics2D g2d = (Graphics2D) g;
 
-        g2d.drawImage(spaceShip.getImage(), spaceShip.getX(), 
-            spaceShip.getY(), this);
+        g2d.drawImage(loadImage(),0,0, this);
+         
     }
     
     @Override
@@ -63,9 +67,20 @@ public class ContenutoGrafico extends JPanel implements ActionListener{
 
         @Override
         public void mouseClicked(MouseEvent e) {
-            spaceShip.keyReleased(e);
         }
 
+    }
+    
+     private BufferedImage loadImage(){
+        URL imagePath = getClass().getResource("img/board.png");
+        BufferedImage result = null;
+        try {
+            result = ImageIO.read(imagePath);
+        } catch (IOException e) {
+            System.err.println("Errore, immagine non trovata");
+        }
+
+        return result;
     }
 }
     
